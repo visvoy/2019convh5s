@@ -109,6 +109,7 @@
   function reload_single(ob,myid) {
       var fr=document.getElementById(myid);
       var urlback=fr.src;
+      if (urlback=='about:blank')return;
       fr.src='about:blank';
       ob.innerHTML='正在刷新...';
       setTimeout(function(){fr.src=urlback;ob.innerHTML='没刷出来？点我'},600)
