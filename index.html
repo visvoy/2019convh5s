@@ -9,6 +9,7 @@
   iframe {width:320px;height:380px;margin-right:6px;margin-bottom:6px;border:1px solid #666;}
   .h5wrap {float:left;position:relative;}
   .title {position:absolute;left:0;top:0;padding:3px 5px;background-color:rgba(255,0,0,0.7);color:#fff;font-weight:bold;z-index:99999;font-size:14px;}
+  .reload {position:absolute;right:6px;top:0;padding:3px 5px;background-color:rgba(0,150,0,0.7);color:#fff;font-weight:bold;z-index:99999;font-size:14px;text-decoration:none;border:0;}
   #url163 {
       -webkit-transform:scale(0.434) translateX(-496px) translateY(-566px);
       -moz-transform:scale(0.434) translateX(-496px) translateY(-566px);
@@ -23,58 +24,71 @@
  </div>
   <div class="h5wrap">
     <div class="title">腾讯</div>
+    <button class="reload" onclick="reload_single(this,'url1')">没刷出来？点我</button>
     <iframe id="url1" src="https://news.qq.com/zt2020/page/feiyan.htm?devid=BCE93731-0CF0-4C2D-86C9-B453A5D4A40F&qimei=bce93731-0cf0-4c2d-86c9-b453a5d4a40f&uid=782478727"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">360</div>
+    <button class="reload" onclick="reload_single(this,'url2')">没刷出来？点我</button>
     <iframe id="url2" src="https://www.360kuai.com/mob/subject/400"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">新浪</div>
+    <button class="reload" onclick="reload_single(this,'url3')">没刷出来？点我</button>
     <iframe id="url3" src="https://news.sina.cn/zt_d/yiqing0121?wm=3200_0001"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">头条</div>
+    <button class="reload" onclick="reload_single(this,'url4')">没刷出来？点我</button>
     <iframe id="url4" src="https://i.snssdk.com/feoffline/hot_list/template/hot_list/forum_tab.html?activeWidget=1"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">丁香园</div>
+    <button class="reload" onclick="reload_single(this,'url5')">没刷出来？点我</button>
     <iframe id="url5" src="https://ncov.dxy.cn/ncovh5/view/pneumonia_peopleapp?from=timeline&isappinstalled=0"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">百度</div>
+    <button class="reload" onclick="reload_single(this,'url6')">没刷出来？点我</button>
     <iframe id="url6" src="https://voice.baidu.com/act/newpneumonia/newpneumonia"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">UC</div>
+    <button class="reload" onclick="reload_single(this,'url7')">没刷出来？点我</button>
     <iframe id="url7" src="https://iflow.uc.cn/webview/article/newspecial.html?uc_biz_str=S%3Acustom%7CC%3Atitlebar_hover_2&aid=3804775841868884355&cid=100&uc_param_str=lodndseiwifrvesvntgi&lo=AAPyNsUSTjo3MMzmwgEnwyrOOBwp00sUUlPkFsBxccucGcg6H4G5tiVSJ22CuJBbVwW26Jd2W%2BkhmoKNDQ%2FUqyA7t2yQLTG7%2Bn3KxLJn58%2BsdZl6rHWr0Y7SgrwTdAe%2FPQiU3NerO2zfbkDLQFPy3SEVjlD7b6EAgCNQoPF6LX%2Bsow%3D%3D&dn=40908109771-dec343db&ds=bTkwBQYyUWuX%2BqJHn9MN%2FVNa07nuDcao7TFlkxqYwci3fQ%3D%3D&ei=bTkwBRDPwqHhBRtTzm%2BK%2BmENsijzUFgAjHeHVb6RT7cADuZGZfXuROcIzEDUPw%3D%3D&fr=iphone&ve=12.8.2.1268&sv=app&nt=2&gi=bTkwBc0WWhf6HIbhhpVVcfD7gWEGZ%2FNwzCND9vJM48wUCUs%3D&sm_article_id=3804775841868884355&uc_h5_page_name=iflowspecial&feiyan=1&feiyan_jump=-3&app=uc-iflow&enterfrom=xxl-bigboycard&zzd_from=uc-iflow&dl_type=2&recoid=3846276394074583215&activity=1&activity2=1"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">凤凰网</div>
+    <button class="reload" onclick="reload_single(this,'url8')">没刷出来？点我</button>
     <iframe id="url8" src="https://news.ifeng.com/c/special/7tPlDSzDgVk"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">一点资讯</div>
+    <button class="reload" onclick="reload_single(this,'url9')">没刷出来？点我</button>
     <iframe id="url9" src="https://atlas.yidianzixun.com/app/epidemic-map?utk=iez7kw7h&appid=pro&ver=5.2.9.0&f=ios&s=3"></iframe>
   </div>
   <div class="h5wrap">
     <div class="title">21财经</div>
-    <iframe id="url9" src="https://app.21jingji.com/html/2020yiqing/"></iframe>
+    <button class="reload" onclick="reload_single(this,'url10')">没刷出来？点我</button>
+    <iframe id="url10" src="https://app.21jingji.com/html/2020yiqing/"></iframe>
   </div>
 
 <!--
   <div class="h5wrap">
     <div class="title">澎湃</div>
-    <iframe id="url10" src="http://projects.thepaper.cn/thepaper-cases/839studio/feiyan/?from=groupmessage&isappinstalled=0"></iframe>
+    <button class="reload" onclick="reload_single(this,'url91')">没刷出来？点我</button>
+    <iframe id="url91" src="http://projects.thepaper.cn/thepaper-cases/839studio/feiyan/?from=groupmessage&isappinstalled=0"></iframe>
   </div>
  
   <div class="h5wrap">
     <div class="title">搜狗</div>
-    <iframe id="url5" src="http://sa.sogou.com/new-weball/page/sgs/epidemic"></iframe>
+    <button class="reload" onclick="reload_single(this,'url92')">没刷出来？点我</button>
+    <iframe id="url92" src="http://sa.sogou.com/new-weball/page/sgs/epidemic"></iframe>
   </div>
 -->
   <div class="h5wrap" style="width:320px;height:420px;overflow:hidden">
     <div class="title">网易</div>
+    <button class="reload" onclick="reload_single(this,'url163')">没刷出来？点我</button>
     <iframe id="url163" style="width:750px;height:870px" src="https://news.163.com/special/epidemic/?spss=qr"></iframe>
   </div>
   <script>
@@ -91,6 +105,14 @@
   str+=d.getMinutes()+'分'; 
   str+= d.getSeconds()+'秒';
   document.getElementById("lastupdate").innerHTML=str;
+  
+  function reload_single(ob,myid) {
+      var fr=document.getElementById(myid);
+      var urlback=fr.src;
+      fr.src='about:blank';
+      ob.innerHTML='正在刷新...';
+      setTimeout(function(){fr.src=urlback;ob.innerHTML='没刷出来？点我'},600)
+  }
   </script>
 </body>
 </html>
