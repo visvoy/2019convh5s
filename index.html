@@ -11,8 +11,8 @@
 </style>
 </head>
 <body>
- <div style="padding-bottom:10px">
-  这个页面5分钟自动刷新一次
+ <div style="margin-bottom:10px;background-color:#eeeeee">
+  这个页面5分钟自动刷新一次，上次刷新时间：<span id="lastupdate"></span>
  </div>
   <div class="h5wrap">
     <p>腾讯</p>
@@ -39,6 +39,15 @@
     function reload_all() {
       document.getElementById("url1").document.localtion.reload();
     }
+   
+  var d=new Date(),str=''; 
+  str+=d.getFullYear()+'年'; 
+  str+=d.getMonth() + 1+'月'; 
+  str+=d.getDate()+'日'; 
+  str+=d.getHours()+'时'; 
+  str+=d.getMinutes()+'分'; 
+  str+= d.getSeconds()+'秒';
+  document.getElementById("lastupdate").innerHTML=str;
   </script>
 </body>
 </html>
