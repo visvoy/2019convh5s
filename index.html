@@ -12,7 +12,7 @@
 </head>
 <body>
  <div style="margin-bottom:10px;background-color:#eeeeee">
-  这个页面5分钟自动刷新一次，上次刷新时间：<span id="lastupdate"></span>
+  5分钟自动刷新，上次刷新时间：<span id="lastupdate"></span>
  </div>
   <div class="h5wrap">
     <p>腾讯</p>
@@ -30,6 +30,11 @@
     <p>头条</p>
     <iframe id="url4" src="https://i.snssdk.com/feoffline/hot_list/template/hot_list/forum_tab.html?activeWidget=1"></iframe>
   </div>
+  <div class="h5wrap">
+    <p>丁香园</p>
+    <iframe id="url5" src="https://ncov.dxy.cn/ncovh5/view/pneumonia_peopleapp?from=timeline&isappinstalled=0"></iframe>
+  </div>
+
  <!--
   <div class="h5wrap">
     <p>搜狗</p>
@@ -38,7 +43,7 @@
 -->
   <div class="h5wrap">
     <p>网易（h5做的挫不支持宽度自适应，对付看吧）</p>
-    <iframe id="url163" style="width:750px" src="https://news.163.com/special/epidemic/?spss=qr" onload="document.getElementById('url163').document.scrollTop=200"></iframe>
+    <iframe id="url163" style="width:750px" src="https://news.163.com/special/epidemic/?spss=qr"></iframe>
   </div>
   <script>
    setTimeout("location.reload();", 1000*60*5);
